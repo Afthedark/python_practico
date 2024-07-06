@@ -52,7 +52,7 @@ multiplicador = float(input("Multiplicador: "))
 
 print(f"Resultado {multiplicando * multiplicador}")
 
-"""
+
 
 print("===================Multiplicacion REALES REDONDEANDO=====================")
 
@@ -61,6 +61,19 @@ multiplicador = float(input("Multiplicador: "))
 res = round(multiplicando * multiplicador, 1)
 
 print(f"Resultado {res}")
+"""
 
 
-#continuar 89
+print("===================Uso de Parentesis=====================")
+
+
+numero1 = float(input("Primer numero: "))
+numero2 = float(input("Segundo numero: "))
+numero3 = float(input("Tercer numero: "))
+numero4 = float(input("Cuarto numero: "))
+numero5 = float(input("Quinto numero: "))
+numero6 = float(input("Sexto numero: "))
+
+
+resultado = (numero5+(numero3*(numero1**numero6)))-(numero4//numero2)
+print(f"Resultado: {resultado}")
