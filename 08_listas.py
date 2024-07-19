@@ -86,7 +86,7 @@ print(lista[2])
 print(lista[1][0])
 print(lista[1][1])
 
-"""
+
 
 print("---------------------Posiciones de las Listas y sublistas----------------------------")
 
@@ -101,6 +101,54 @@ print(lista2)
 
 lista3 = lista[6:] #Imprime de la posicion 6 a la 9
 print(lista3)
-
+"""
 
 #continuar 125
+
+
+print("---------------------Metodos en las Listas----------------------------")
+
+lista = [45, 32, 3, 78]
+print(f"Lista original: ", lista)
+#Metodo append es para agregar elementos a la lista por el final
+lista.append(995)
+lista.append(7)
+print(f"Lista modificada uando append: ", lista)
+
+#Metodo sort es para ordenar la lista 
+lista.sort()
+print(f"Esta la lista ordenada con sort", lista)
+
+#Metodo reverse
+lista.reverse()
+print(f"Lista ordenada alreves: ", lista)
+
+#Metodo extendend es para agregar elementos a la lista por el final
+listaextended = [1, 5, 87, 45]
+lista.extend(listaextended) #Agrega la listaextended al final de la lista
+print(f"Lista despues de extend: ", lista)  
+
+
+#Otro metodo para ordenar alrreves la listas en python
+lista.sort(reverse=True)
+print(f"Lista ordenada alreves 2: ", lista)
+
+
+#Metodo para ver cantidad de elementos en la lista (Cuantas veces se repite un elemento de la lista) 
+print(f"Numero deel elemento 45:", lista.count(45))
+
+
+#Metodo para remover un elemento de la lista
+lista.remove(995)
+print(f"Elmento removido de la lista (995): {lista}")
+
+#Metodo para imprimir la posicion del elemento de una lista
+print(f"Posicion del elemento 45: {lista.index(45)}")
+
+#Metodo pop es para remover el ultimo elemento de la lista
+lista.pop()
+print(f"Lista despus el pop: {lista}")
+
+#Metodo clear es para vaciar la lista por completo
+lista.clear()
+print(f"Lista despues del clear {lista}")
