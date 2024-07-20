@@ -51,6 +51,10 @@ else:
         print(f"El resultado de la suma es {resultado} impar y es menor que 1000 !")
 
 
+#continuar 148
+
+
+
 
 
 
