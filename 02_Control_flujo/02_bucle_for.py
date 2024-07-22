@@ -77,11 +77,11 @@ for iterar in lista:
 """
 
 
-for item in range(5):
-    for item2 in range(3):
-        print(f"Iteracion: {item} {item2}")
+for item in range(5): #empieza en 0 y termina en 4
+    for item2 in range(3): # empieza en 0 y termina en 2
+        print(f"Iteracion: {item} {item2}") #itera 0 0, 0 1, 0 2, 1 0, 1 1, 1 2
 
 
-#continuar 154
+#continuar 155
 
 
