@@ -28,7 +28,7 @@ else:
     print("El numero es mayor o igual que 400: ")
 
 print(f"Has escrito el numero {numero} ")
-"""
+
 
 
 #ej4
@@ -53,9 +53,18 @@ else:
 
 #continuar 148
 
+"""
+#ej5
 
+numero1 = int(input("Introduce un numero: "))
+numero2 = int(input("Introduce otro numero: "))
 
-
+if(numero1 == numero2):
+    print("Ambos numeros son lo mismo")
+elif(numero1 >= numero2):
+    print("El numero 1 es mayor al numero 2")
+else:
+    print("El numero 2 es mayor al numero 1")
 
 
 
