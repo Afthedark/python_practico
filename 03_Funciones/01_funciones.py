@@ -88,31 +88,72 @@ ressuma, resmulti = SumarMultiplicar(3, 5, 7, 9, 11, 13, 15, 17, 19, 21)
 print(f"El resultado de la suma es: {ressuma}")
 print(f"El resultado de la multiplicacion es: {resmulti}")    
 
-"""
 
 
-def SumarMultiplicar(param1, param2):
-    return Sumar(param1, param2), Multiplicar(param1, param2)
+def Calculadora(param1, param2):
+    return Sumar(param1, param2), Restar(param1, param2), Multiplicar(param1, param2), Dividir(param1, param2), Mod(param1, param2), Dividir_entero(param1, param2)
 
 
 def Sumar(n1, n2):
     return n1 + n2
 
 
+def Restar(n1, n2):
+    return n1-n2
+
+
 def Multiplicar(n1, n2):
     return n1 * n2
 
+def Dividir(n1, n2):
+    return n1 / n2 #Division entera 
+
+def Dividir_entero(n1, n2):
+    return n1 // n2 #Division entera 
+
+def Mod(n1, n2):
+    return n1 % n2
 
 num1 = int(input("Introduce un numero 1: "))
 num2 = int(input("Introduce un numero 2: "))
 
-res_suma, res_multi = SumarMultiplicar(num1, num2)
+res_suma, res_resta, res_multi, res_div, res_mod, res_div_entero = Calculadora(num1, num2) #Llamamos a la funcion y la variables la ordenamos de acuerdo a la funcion
 
 print(f"La suma es: {res_suma}")
-print(f"La multi es: {res_multi}")
+print(f"La resta es: {res_resta}")
+print(f"La multiplicacion es: {res_multi}")
+print(f"La division normal es: {res_div}")
+print(f"El modulo es: {res_mod}")
+print(f"La division entera es: {res_div_entero}")
+
+
+
+print("-------------------Variables globales----------------------")
+def Variables():
+    variable = 3
+    print(f"Valor dentro de la funcion {variable}")
+
+
+variable = 5
+Variables() #Llamando a la funcion
+print(f"Variable en el programa principal: {variable}")
+
+"""
+
+def Variable():
+    global variable
+    print(f"Valor dentro de la funcion 1: {variable}")
+    variable = 3
+    print(f"Valor dentro de la funcion 2: {variable}")
+
+
+variable = 5
+print(f"Variable en el programa principal 1: {variable}")
+Variable() #Llamando a la funcion
+print(f"Variable en el programa principal 2: ahora es la variable global: {variable}")
+
+#Continuar 168
 
 
 
 
-
-#continuar 167
